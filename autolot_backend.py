@@ -1,3 +1,5 @@
+import uuid
+
 from flask import Flask
 from flask.ext.cqlalchemy import CQLAlchemy
 
@@ -12,6 +14,7 @@ db = CQLAlchemy(app)
 
 class User(db.Model):
     __keyspace__ = 'test'
+    id = db.columns.UUID(primary_key=True, default=uuid.uuid4)
     name = db.columns.Text(primary_key=False)
 
 
