@@ -23,7 +23,7 @@ class User(db.Model):
 def hello_world():
     usr = None
     for i in range(1000):
-        usr = User(name='John Doe ' + i)
+        usr = User(name='John Doe ' + str(i))
     return usr
 
 
