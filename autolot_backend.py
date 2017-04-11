@@ -12,12 +12,13 @@ db = CQLAlchemy(app)
 
 class User(db.Model):
     __keyspace__ = 'test'
-    name = db.columns.Text(primary_key=True)
+    name = db.columns.Text(primary_key=False)
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def hello_world():
-    usr = User(name='John Doe')
+    for i in range(1000):
+        usr = User(name='John Doe ' + i)
     return usr
 
 
