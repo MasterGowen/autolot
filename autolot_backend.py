@@ -24,6 +24,7 @@ def hello_world():
     usr = None
     for i in range(1000):
         usr = User(name='John Doe ' + str(i))
+        usr.save()
     return str(usr)
 
 
