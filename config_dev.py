@@ -1,0 +1,3 @@
+CASSANDRA_HOSTS = ['127.0.0.1']
+CASSANDRA_KEYSPACE = "test"
+CASSANDRA_SETUP_KWARGS = {'protocol_version': 3}
