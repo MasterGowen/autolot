@@ -11,7 +11,6 @@ db = CQLAlchemy(app)
 
 
 class User(db.Model):
-    __keyspace__ = 'test'
     name = db.columns.Text(primary_key=True)
 
 
