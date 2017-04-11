@@ -17,7 +17,7 @@ class User(db.Model):
 
 @app.route('/')
 def hello_world():
-    usr = User.create(name='John Doe')
+    usr = User(name='John Doe')
     return usr
 
 
