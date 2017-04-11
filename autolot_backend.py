@@ -10,7 +10,6 @@ app.config['CASSANDRA_SETUP_KWARGS'] = {'protocol_version': 3}
 
 
 db = CQLAlchemy(app)
-db.sync_db()
 
 
 class User(db.Model):
@@ -29,4 +28,5 @@ def hello_world():
 
 
 if __name__ == '__main__':
+    db.sync_db()
     app.run(host='0.0.0.0', port=8000)
