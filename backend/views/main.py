@@ -7,6 +7,7 @@ mod = Blueprint('main', __name__)
 def index():
     return render_template(
         'main/index.html',
+        title="Главная"
     )
 
 
@@ -14,6 +15,7 @@ def index():
 def statistics():
     return render_template(
         'main/statistics.html',
+        title="Статистика"
     )
 
 
@@ -21,6 +23,7 @@ def statistics():
 def auction():
     return render_template(
         'main/auction.html',
+        title="Аукцион"
     )
 
 
@@ -28,6 +31,7 @@ def auction():
 def news():
     return render_template(
         'main/news.html',
+        title="Новости"
     )
 
 
@@ -35,6 +39,7 @@ def news():
 def feedback():
     return render_template(
         'main/feedback.html',
+        title="Обратная связь"
     )
 
 
@@ -42,4 +47,5 @@ def feedback():
 def articles():
     return render_template(
         'main/articles.html',
+        title="Статьи"
     )
