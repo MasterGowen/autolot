@@ -1,4 +1,4 @@
 /* line 1 */
-h1 {
-  margin: auto;
+.flex-cont, .flex-cont-1, .flex-cont-2 {
+  display: flex;
 }
