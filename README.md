@@ -2,10 +2,11 @@
 
 ## Development deploying
 
-1. Install **npm** and **typescript**
+1. Install **typescript** and **sass**
 
 ```
 npm install typescript -g
+npm install sass -g
 ```
 
 2. Install [**python3.6**](https://www.python.org/downloads/release/python-360/)
