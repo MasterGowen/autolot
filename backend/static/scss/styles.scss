@@ -1,3 +1,5 @@
-.flex-cont, .flex-cont-1, .flex-cont-2 {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
 }

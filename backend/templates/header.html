@@ -1,18 +1,17 @@
-<header class="flex-cont">
-
-
-    <ul class="flex-cont-1">
-        <li class="flex-element"><a href="/" target="_self">Главная</a></li>
-        <li class="flex-element"><a href="/statistics" target="_self">Статистика аукционов</a></li>
-        <li class="flex-element"><a href="/auction" target="_self">Аукционы Японии</a></li>
-        <li class="flex-element"><a href="/news" target="_self">Новости</a></li>
-        <li class="flex-element"><a href="/feedback" target="_self">Контакты</a></li>
-        <li class="flex-element"><a href="/articles" target="_self">Статьи</a></li>
+<header>
+    {% if request.path ==  '/news' %}
+        Новости
+    {% endif %}
+    <ul>
+        <li><a href="/" target="_self">Главная</a></li>
+        <li><a href="/statistics" target="_self">Статистика аукционов</a></li>
+        <li><a href="/auction" target="_self">Аукционы Японии</a></li>
+        <li><a href="/news" target="_self">Новости</a></li>
+        <li><a href="/feedback" target="_self">Контакты</a></li>
+        <li><a href="/articles" target="_self">Статьи</a></li>
     </ul>
     <ul class="flex-cont-2">
-        <li class="flex-element-2"><a class="button" href="/login">Вход</a></li>
-        <li class="flex-element-2"><a class="button" href="/registration">Регистрация</a></li>
+        <li><a class="button" href="/login">Вход</a></li>
+        <li><a class="button" href="/registration">Регистрация</a></li>
     </ul>
-
-
 </header>
