@@ -1,4 +1,40 @@
-/* line 1 */
-.flex-cont, .flex-cont-1, .flex-cont-2 {
-  display: flex;
-}
+/* line 1 */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, [col] 62px) 1fr;
+  grid-template-rows: repeat(5, [row] auto);
+  grid-gap: 10px;
+}
+
+/* line 7 */
+header {
+  background-color: red;
+  grid-column: col /span 12;
+  grid-row: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 15 */
+header ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 19 */
+header ul li {
+  margin: 5px;
+  list-style-type: none;
+}
+
+/* line 26 */
+.footer {
+  grid-column: col /span 12;
+  grid-row: row 5;
+}
+
+/* line 30 */
+.col-md-3 {
+  grid-column: col 5 /span 2;
+  grid-row: row 4;
+}
